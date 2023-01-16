@@ -17,6 +17,10 @@ export default function Show(props){
             <input type="text" name="image" placeholder="Image Link"/>
             <input type="submit" value={`update ${cheese.name}`}/>
         </Form>
+        <h2>Delete {cheese.name}</h2>
+        <Form action={`/delete/${cheese._id}`} method="post">
+            <input type='submit' value={`Delete ${cheese.name}`}/>
+        </Form>
     </div>
     
     </>)
