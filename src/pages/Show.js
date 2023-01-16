@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom"
+import { Form } from "react-router-dom"
 
 export default function Show(props){
 
@@ -7,7 +8,7 @@ export default function Show(props){
     
     <div className="cheese">
         <h1>{cheese.name}</h1>
-        <h2>{cheese.countryOfOrigin}</h2>
+        <h2>Country of Origin: {cheese.countryOfOrigin}</h2>
         <img src={cheese.image} alt={cheese.name}/>
 
         <h2>Update {cheese.name}</h2>

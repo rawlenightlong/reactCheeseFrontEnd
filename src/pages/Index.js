@@ -24,7 +24,7 @@ export default function Index(props){
 
     return (
         <div>
-        <h2>Create a Person</h2>
+        <h2>Add A Cheese!</h2>
         <Form action="/create" method="post" onSubmit={handleSubmit}>
             <input type="input" id="form" name="name" placeholder="Cheese Name" onChange={event=>setName(event.target.value)}/>
             <input type="input" id="form" name="countryOfOrigin" placeholder="Country of Origin"onChange={event=>setCountryOfOrigin(event.target.value)}/>
@@ -39,7 +39,7 @@ export default function Index(props){
                 <h1>{cheese.name}</h1>
             </Link>
             <img src={cheese.image} alt={cheese.name}/>
-            <h3>{cheese.countryOfOrigin}</h3>
+            <h3>Country of Origin: {cheese.countryOfOrigin}</h3>
         </div>
     ))}
     </div>

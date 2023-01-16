@@ -20,7 +20,7 @@ export const createAction = async ({request}) => {
 }
 
 export const updateAction = async({request, params}) => {
-    formData = await request.formData()
+    const formData = await request.formData()
     const updatedCheese = {
         name: formData.get("name"),
         countryOfOrigin: formData.get("countryOfOrigin"),
