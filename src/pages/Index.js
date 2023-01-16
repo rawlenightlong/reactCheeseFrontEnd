@@ -4,6 +4,8 @@ export default function Index(props){
 
     const cheeses = useLoaderData()
 
+
+
     return (
         <div>
         <h2>Create a Person</h2>
@@ -13,7 +15,7 @@ export default function Index(props){
             <input type="input" name="image" placeholder="Image Link"/>
             <input type="submit" value="Add Cheese"/>
         </Form>
-        
+
         <h2>Cheeses</h2>
         {cheeses.map(cheese => (
         <div key={cheese._id} className="cheese">
