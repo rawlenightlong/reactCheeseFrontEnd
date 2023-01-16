@@ -1,7 +1,16 @@
+import {Link, useLoaderData } from "react-router-dom"
+
 export default function Index(props){
-    return (<>
+
+    const cheeses = useLoaderData()
+
+    return (cheeses.map(cheese => (
+        <div key={cheese._id} className="cheese">
+            <Link to={`/${cheese._id}`}>
+                <h1>{cheese.name}</h1>
+            </Link>
+        </div>
+    ))
     
-    <h1>Index Component</h1>
-    
-    </>)
+    )
 }
