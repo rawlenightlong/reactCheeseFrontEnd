@@ -1,7 +1,15 @@
+import { useLoaderData } from "react-router-dom"
+
 export default function Show(props){
+
+    const cheese = useLoaderData()
     return (<>
     
-    <h1>Show Component</h1>
+    <div className="cheese">
+        <h1>{cheese.name}</h1>
+        <h2>{cheese.countryOfOrigin}</h2>
+        <img src={cheese.image} alt={cheese.name}/>
+    </div>
     
     </>)
 }
