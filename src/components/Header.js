@@ -5,7 +5,7 @@ export default function Header(props){
     
     <nav className="nav">
         <Link to="/">
-            <div>Cheese App!</div>
+            <div>Cheese App</div>
         </Link>
     </nav>
     
